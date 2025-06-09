@@ -1,0 +1,31 @@
+🔑 ENVIRONMENT VARIABLES FOR RENDER DEPLOYMENT
+
+Copy these exactly into your Render dashboard:
+
+NODE_ENV=production
+
+MONGODB_URI=mongodb+srv://sherin:xqAZvfvPA4juiqy@questify-cluster.9kydwyh.mongodb.net/questify?retryWrites=true&w=majority&appName=questify-cluster
+
+JWT_SECRET=e5c0c556729654409ad266e7a85d42682c90ed3529975ebf0073ac2463269e40c92f896f6d6730ab32058140f555a0665319ee3f9b6b5a78e6f01fb4f1c28cac
+
+API_KEY_SECRET=e0db16968c30ed27c942dda0c28bcc0767732707239eba819307c8d56751a358
+
+FRONTEND_URL=https://questify-frontend-three.vercel.app
+
+RATE_LIMIT_WINDOW_MS=900000
+
+RATE_LIMIT_MAX_REQUESTS=100
+
+📋 RENDER DEPLOYMENT SETTINGS:
+
+Build Command: npm install
+Start Command: npm start
+Environment: Node
+Branch: main
+
+🚀 After deployment, your backend will be available at:
+https://questify-backend.onrender.com
+
+📝 Update your Vercel frontend with:
+NEXT_PUBLIC_API_URL=https://questify-backend.onrender.com/api
+NEXT_PUBLIC_API_KEY=e0db16968c30ed27c942dda0c28bcc0767732707239eba819307c8d56751a358
